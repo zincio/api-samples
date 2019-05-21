@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Zinc Exporter</title>
+</head>
+<body style="
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+">
+    <div>
+        <h1>Select date of orders to export:</h1>
+        <input type="date" name="reportFor" value="" style="
+            display: block;
+            font-size: inherit;
+            margin: 8px auto;
+        ">
+        <button id='exportButton' onclick="exportOrders()" style='
+            background-color: lightgreen;
+            font-size: inherit;
+            border-radius: 8px;
+        '>Download Orders</button>
+        <h1 id='details'></h1>
+    </div>
+    <script src='local-exporter.js'></script>
+</body>
